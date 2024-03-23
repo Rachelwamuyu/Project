@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>IMAGES IN HTML</title>
+            <style>
+                #tiger_image{ 
+            /*introduced at the <img> of the tiger, that is img id="tiger_image" so as to resize separately*/
+                    width: 30%;
+                }
+                #horse_image{
+                    width: 50%;   
+                }   
+            </style>
+            <!--<style>
+                img{
+                    width: 30%
+                    height: 10%
+                }
+            </style> -->
+            <!--The above commented code changes all your image size to 30% if not commented -->
+        </head>
+        <body>
+            <style> /*CSS for image alignment*/
+                image-align-right{
+                    float:right
+                    margin-right 10px; /*adds some space between image and text*/
+                }
+            </style>
+           <p><img src="images/lion.jpeg" alt="A lion" width="500" height="500" class="image-align-right"> 
+            <!--Image in html is a void element, therefore, does not have a closing tag. 
+            Scr is for the source of the image or image location.
+            Specify an alternate attribute; alt. This is a piece of text that describes the image.
+            The width and heght specifies the size of the image -->
+        </p> 
+            <a href="link-to-page.html" target="_blank"> 
+                <!--gives a clickable image which opens in a new browser-->
+                <img src= "images/cat.jpeg" alt="Clickable cat image" style="width: 50%;">
+                <!-- width:50% is the size the image will appear in terms of %-->
+            </a>
+            <img src= "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+            alt="Image from external source"><!-- image link from a website-->
+            <img src="images/elephant.webp" alt= "An elephant" style="max-width: 100%;" loading="lazy"> 
+            <!-- max-width:100% is the size adaptive to various screen size-->
+            <!-- loading the image lazily to improve performance by reducing the initial load time-->
+            <figure>
+                <img id="tiger_image" src="images/tiger.jpg" alt="A tiger">
+                 <!-- introducting image "id" enables one to size images separately at the <head> tag -->  
+                <figcaption> This is a picture of a tiger resting
+            <!-- figcaption is a decription of the image-->        
+                </figcaption>
+            </figure>
+            <img id="horse_image" src="images/horse.jpg" alt="A horse relaxing"> 
+        </body>
+    </html>
