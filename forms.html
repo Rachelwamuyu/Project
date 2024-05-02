@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html><head>
+    <title> FORMS IN HTML</title>
+</head>
+   <body>
+    <form action = “scripts/data.php” method= “post” enctype = “multipart/form-data”>
+        <!-- single line text input control-->
+        <label for “student_name” > Name: </label>
+        <!-- this is the text that will appear on the browser to promp someone to input-->
+        <input type = "text" name="student_name" id = "student_name" placeholder ="Enter your name"> 
+         <!-- text input accepts numbers and text-->
+         <br>
+         <label for “” > Email: </label>
+         <!-- this is for email address-->
+         <input type = "email" name="email_address" id = "email_address" placeholder ="Enter your email"> 
+          <br>
+           <!-- multiline line text input control-->
+           <textarea name = "bio" id = "bio" rows = "10" cols = "40">
+            Please enter your bio here
+           </textarea>
+        <br>
+        <fieldset>
+        <legend>Subject</legend>
+        <input type = "checkbox" name = "math" id="math" value ="Math" checked></input>
+        <label for ="math">Math</label>
+        <br>
+        <input type = "checkbox" name = "english" id="english" value ="English" ></input>
+        <label for ="english">English</label>
+        <br>
+        <input type = "checkbox" name = "science" id="science" value ="Science" ></input>
+        <label for ="science">Science</label>
+    </fieldset>
+    <br>
+    <fieldset>
+    <legend>Interest</legend>
+    <input type = "checkbox" name = "Interest" id="music" value ="Music" ></input>
+    <label for ="music">Music</label>
+    <br>
+    <input type = "checkbox" name = "Interest" id="sports" value ="Sports" ></input>
+    <label for ="sports">Sports</label>
+    <br>
+    <input type = "checkbox" name = "Interest" id="reading" value ="reading" ></input>
+    <label for ="reading">Reading</label>
+</fieldset>
+	<br>
+	<fieldset>
+	<legend>Gender:</legend>
+	<input type = "radio" name = "gender" id="male" value ="Male"></input>
+        <label for ="male">Male</label>
+        <br>
+	<input type = "radio" name = "gender" id="female" value ="Female"></input>
+        <label for ="female">Female</label>
+	</fieldset>
+    <br>
+	<fieldset>
+	<legend>Payment:</legend>
+    <label> Choose your preferred payment method</label>
+    <br>
+	<input type = "radio" name = "paymentMethod" id="CreditCard" value ="CreditCard"></input>
+        <label for ="CreditCard">Credit Card</label>
+        <br>
+	<input type = "radio" name = "paymentMethod" id="Mpesa" value ="Mpesa"></input>
+        <label for ="Mpesa">Mpesa</label>
+        <br>
+    <input type = "radio" name = "paymentMethod" id="Paypal" value ="Paypal"></input>
+         <label for ="Paypal">Paypal</label>
+	</fieldset>
+	<br>
+	<label for ="classes">Classes: </label>
+	<select name = "classes" id= "classes">
+		<option value=""> --Select preferred class--</option>
+		<option value="Physical"> Physical </option>
+		<option value="Virtual"> Virtual </option>
+	</select>
+	<!-- the physical class is already selected-->
+	<br>
+	<label for= "passport_photo"> Passport Photo </label>
+	<input type = "file" id ="passport_photo" name="passport_photo" accept = "image/*"></input>
+	<br>
+	<label for= "video_upload"> Video </label>
+	<input type = "file" id ="video_upload" name="video_upload" accept = "video/*"></input>
+	<hr>
+	<input type = "button" id ="btn_ok" name="btn_ok" value = "OK!"></input onclick = "javascript code">
+    <input type = "reset" id = "clear" name = "clear" value = "Clear Form">
+    <input type = "submit" id = "submit" name = "submit" value = "Register">
+        <br>
+    <label for = "username">Username</label>
+    <input type = "username" id = "username" name = "username" placeholder = "Enter your username">
+        <br>
+    <label for = "password">Password</label>
+    <input type = "password" id = "password" name = "password" placeholder = "Enter your password" aria-describedby="password-hint">
+    <div id = "password-hint" > Password must be at least 8 characters long</div>
+      
+</form>
+   </body> 
+</html>
